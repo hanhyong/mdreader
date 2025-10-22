@@ -31,7 +31,7 @@
     .panel { background: var(--panel); border:1px solid var(--panel-border); border-radius: 16px; padding: 20px; }
 
     /* 마스킹 컴포넌트 */
-    .mask { position: relative; display: inline-block; border-radius: 6px; cursor: pointer; padding: 0.08em 0.24em; }
+    .mask { position: relative; display: inline-block; border-radius: 6px; cursor: pointer; padding: 0 .24em; vertical-align: baseline; }
     .mask:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
     .mask .mask-text { transition: opacity .15s ease; }
     .mask[data-hidden="1"] .mask-text { opacity: 0; }
@@ -40,8 +40,8 @@
     .mask[data-hidden="0"] .mask-cover { background: var(--accent-trans); }
 
     /* prose-ish */
- .content { white-space: pre-wrap; line-height: 1.25; } /* 줄간격 압축 */
 
+ .content { white-space: pre-wrap; line-height: 1.05 !important; }
  /* 문단(빈 줄) 사이 마진을 거의 없앰 */
  .content p { margin-block: 0; }
  .content p + p { margin-top: .2em; }  /* 0.2em~0.35em 사이로 취향 조절 */
@@ -272,6 +272,7 @@
   </script>
 </body>
 </html>
+
 
 
 
