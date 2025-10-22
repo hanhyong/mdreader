@@ -31,11 +31,11 @@
     .panel { background: var(--panel); border:1px solid var(--panel-border); border-radius: 16px; padding: 20px; }
 
     /* 마스킹 컴포넌트 */
-    .mask { position: relative; display: inline-block; border-radius: 6px; cursor: pointer; padding: 0 .18em; line-height: 1; vertical-align: baseline; }
+    .mask { position: relative; display: inline-block; border-radius: 6px; cursor: pointer; padding: 0 .22em; line-height: inherit; vertical-align: baseline; }
     .mask:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
     .mask .mask-text { transition: opacity .15s ease; }
     .mask[data-hidden="1"] .mask-text { opacity: 0; }
-    .mask .mask-cover { position:absolute; inset:0; border-radius:6px; transition: opacity .15s ease, background-color .15s ease; pointer-events: none; }
+    .mask .mask-cover { position:absolute; inset: -.08em -.16em; border-radius:8px; transition: opacity .15s ease, background-color .15s ease; pointer-events: none; }
     .mask[data-hidden="1"] .mask-cover { background: var(--accent-opaque); }
     .mask[data-hidden="0"] .mask-cover { background: var(--accent-trans); }
 
@@ -275,6 +275,7 @@
   </script>
 </body>
 </html>
+
 
 
 
