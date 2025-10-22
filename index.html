@@ -40,7 +40,11 @@
     .mask[data-hidden="0"] .mask-cover { background: var(--accent-trans); }
 
     /* prose-ish */
-    .content { white-space: pre-wrap; }
+ .content { white-space: pre-wrap; line-height: 1.25; } /* 줄간격 압축 */
+
+ /* 문단(빈 줄) 사이 마진을 거의 없앰 */
+ .content p { margin-block: 0; }
+ .content p + p { margin-top: .2em; }  /* 0.2em~0.35em 사이로 취향 조절 */
     .content h1, .content h2, .content h3 { scroll-margin-top: 80px; }
     .content pre { background:#0f172a; color:#e5e7eb; padding:12px; border-radius:12px; overflow:auto; border:1px solid #1f2937; }
     .content code { background:#111827; border:1px solid #1f2937; padding: 0 4px; border-radius: 6px; }
@@ -268,6 +272,7 @@
   </script>
 </body>
 </html>
+
 
 
 
